@@ -67,6 +67,7 @@ Our 'Bambi' looks hungry. Let's go to feed it!"""
 
 goose = r"""
 Switching on the camera in the goose habitat...
+
                                     _
                                 ,-"" "".
                               ,'  ____  `.
@@ -118,13 +119,10 @@ Switching on the camera in the rabbit habitat...
 (" ~----( ~   Y.  )
 It looks like we will soon have more rabbits!"""
 
+numb = input("Please enter the number of the habitat you would like to view: ")
 
-# write your code here
-
-numb = input("Please enter the number of the habitat you would like to view: > ")
-
-while numb.isdigit():
+while numb != 'exit':
     print([camel, lion, deer, goose, bat, rabbit][int(numb)])
-    numb = input("Please enter the number of the habitat you would like to view: > ")
+    numb = input("Please enter the number of the habitat you would like to view: ")
 
 print("See you later!")
